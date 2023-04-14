@@ -21,7 +21,16 @@ public class ExchangeService {
 
     public Optional<Double> getSellRate(String from_currency){
         Optional<CurrencyExchange> c = exchangeRepository.getExchange(from_currency);
-        return c.map(CurrencyExchange::getSellRate);
+        Optional<Double> rate;
+        if(c.isPresent()){
+            if(from_currency.startsWith("100"))
+                rate = Optional.of(c.get().getSellRate() / 100);
+            else
+                rate = Optional.of(c.get().getSellRate());
+        }
+        else
+            rate = Optional.empty();
+        return rate;
     }
 
     public Optional<Double> convert(String from_currency, double value){

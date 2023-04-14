@@ -1,0 +1,25 @@
+2023-04-14T15:32:24.710Z  INFO 21476 --- [main] s.d.c.CurrencyExchangeApplication        : Starting CurrencyExchangeApplication using Java 17.0.6 with PID 21476 (D:\PFE\API\currency_exchange\target\classes started by Lenovo in D:\PFE\API\currency_exchange)
+2023-04-14T15:32:24.714Z DEBUG 21476 --- [main] s.d.c.CurrencyExchangeApplication        : Running with Spring Boot v3.0.3, Spring v6.0.5
+2023-04-14T15:32:24.715Z  INFO 21476 --- [main] s.d.c.CurrencyExchangeApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-04-14T15:32:25.911Z  INFO 21476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-14T15:32:26.022Z  INFO 21476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 1 JPA repository interfaces.
+2023-04-14T15:32:27.768Z  INFO 21476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-04-14T15:32:27.781Z  INFO 21476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-14T15:32:27.782Z  INFO 21476 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-14T15:32:27.989Z  INFO 21476 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-14T15:32:27.990Z  INFO 21476 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3191 ms
+2023-04-14T15:32:28.604Z  INFO 21476 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-14T15:32:28.679Z  INFO 21476 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-14T15:32:29.098Z  INFO 21476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-14T15:32:29.459Z  INFO 21476 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2804b13f
+2023-04-14T15:32:29.462Z  INFO 21476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-14T15:32:29.505Z  INFO 21476 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-14T15:32:30.587Z  INFO 21476 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-14T15:32:30.603Z  INFO 21476 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-14T15:32:31.198Z  WARN 21476 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-14T15:32:32.018Z  INFO 21476 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2023-04-14T15:32:32.146Z  INFO 21476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-04-14T15:32:32.161Z  INFO 21476 --- [main] s.d.c.CurrencyExchangeApplication        : Started CurrencyExchangeApplication in 8.464 seconds (process running for 9.6)
+2023-04-14T15:34:45.780Z  INFO 21476 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-14T15:34:45.787Z  INFO 21476 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-14T15:34:45.919Z  INFO 21476 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

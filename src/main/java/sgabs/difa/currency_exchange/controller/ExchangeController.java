@@ -1,5 +1,6 @@
 package sgabs.difa.currency_exchange.controller;
 
+import io.micrometer.core.annotation.Timed;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,7 @@ import java.util.Optional;
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
-@RequestMapping(path = "api/v1/exchange")
+@RequestMapping(path = "api/v2/exchange")
 public class ExchangeController {
     Logger logger = LoggerFactory.getLogger(ExchangeController.class);
     private final ExchangeService exchangeService;
@@ -22,6 +23,7 @@ public class ExchangeController {
         this.exchangeService = exchangeService;
     }
 
+    @Timed(value = "currencies.time", description = "Time taken to return all currencies")
     @GetMapping(value = "/currencies")
     public ResponseEntity<List<String>> getCurrencies() {
         logger.trace("Method getCurrencies invoked with HTTP OK status");
